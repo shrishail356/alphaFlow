@@ -36,6 +36,34 @@ app.get('/health', async (_req, res) => {
   }
 });
 
+// Auth routes
+import authRoutes from './routes/auth.routes';
+app.use('/api/auth', authRoutes);
+
+// Decibel routes
+import decibelRoutes from './routes/decibel.routes';
+app.use('/api/decibel', decibelRoutes);
+
+// AI routes
+import aiRoutes from './routes/ai.routes';
+app.use('/api/ai', aiRoutes);
+
+// Trading routes
+import tradingRoutes from './routes/trading.routes';
+app.use('/api/trading', tradingRoutes);
+
+// Portfolio routes
+import portfolioRoutes from './routes/portfolio.routes';
+app.use('/api/portfolio', portfolioRoutes);
+
+// Rewards routes
+import rewardsRoutes from './routes/rewards.routes';
+app.use('/api/rewards', rewardsRoutes);
+
+// News routes
+import newsRoutes from './routes/news.routes';
+app.use('/api/news', newsRoutes);
+
 app.listen(env.PORT, '0.0.0.0', () => {
   // eslint-disable-next-line no-console
   console.log(`Backend listening on port ${env.PORT}`);

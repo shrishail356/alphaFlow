@@ -1,7 +1,8 @@
 # Project-specific folders to exclude
 docs/
 database/
-
+aptos-wallet-adapter-main
+diagrams
 # Dependencies
 node_modules/
 .pnp
@@ -24,7 +25,7 @@ out/
 .env.test.local
 .env.production.local
 .env*.local
-
+!.env.example
 # IDE
 .vscode/
 .idea/
