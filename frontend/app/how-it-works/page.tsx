@@ -118,7 +118,7 @@ export default function HowItWorksPage() {
               <span className="text-sm font-medium">How It Works</span>
             </motion.div>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
                 Simple. Fast. Powerful.
               </span>
             </h1>
@@ -176,7 +176,7 @@ export default function HowItWorksPage() {
                             transition={{ duration: 0.4, delay: idx * 0.1 }}
                             className="flex items-start gap-3"
                           >
-                            <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                            <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                             <span className="text-muted-foreground">{detail}</span>
                           </motion.li>
                         ))}
@@ -193,7 +193,7 @@ export default function HowItWorksPage() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className="flex-1 flex items-center justify-center"
                   >
-                    <div className={`relative w-64 h-64 rounded-3xl bg-gradient-to-br ${step.color} p-8 shadow-2xl`}>
+                    <div className={`relative w-64 h-64 rounded-3xl bg-linear-to-br ${step.color} p-8 shadow-2xl`}>
                       <div className="absolute inset-0 rounded-3xl bg-black/20 backdrop-blur-sm" />
                       <Icon className="relative h-full w-full text-white" />
                     </div>
@@ -260,7 +260,7 @@ export default function HowItWorksPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-3xl text-center rounded-3xl border-2 bg-gradient-to-br from-primary/10 via-background to-primary/5 p-12 backdrop-blur-sm"
+            className="mx-auto max-w-3xl text-center rounded-3xl border-2 bg-linear-to-br from-primary/10 via-background to-primary/5 p-12 backdrop-blur-sm"
           >
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               Ready to Get Started?
